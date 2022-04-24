@@ -1,7 +1,7 @@
-import { callBatman } from "./components/funciones";
+import { getPokemon } from './generics/get-pokemon';
 
 
-
-console.log('Hola Mundo!');
-
-console.log( callBatman('Andres') );
+getPokemon(4)
+    .then( pokemon => console.log(pokemon.height))
+    .catch( err => console.log(err))
+    .finally( ()=> console.log('Fin'))
